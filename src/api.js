@@ -69,7 +69,7 @@ const requestOTP = params => {
         client_id:
           process.env.REACT_APP_DEVELOPMENT === "TRUE"
             ? "snEO0U7aSy5GYYxHY7a8HHJ56sAgt4xS"
-            : "rYBqQ95wyal3Iid2ZHhkeb7OzUNlqNjG",
+            : "snEO0U7aSy5GYYxHY7a8HHJ56sAgt4xS",
         msisdn:
           process.env.REACT_APP_COUNTRY_PREFIX +
           cleanPhoneNumber(params.phoneNumber || ""),
