@@ -18,11 +18,11 @@ export default class AuthLoader extends Responder {
     const netCode = get(this, "routeData.netCode");
     const code = get(netCode, "code");
 
-    if (!netCode) {
-      console.log("REDIRECTING:", process.env.REACT_APP_NETCODE_URL);
-      window.location.href = process.env.REACT_APP_NETCODE_URL;
-      return;
-    }
+    // if (!netCode) {
+    //   console.log("REDIRECTING:", process.env.REACT_APP_NETCODE_URL);
+    //   window.location.href = process.env.REACT_APP_NETCODE_URL;
+    //   return;
+    // }
 
     delete routeData.netCode;
 
